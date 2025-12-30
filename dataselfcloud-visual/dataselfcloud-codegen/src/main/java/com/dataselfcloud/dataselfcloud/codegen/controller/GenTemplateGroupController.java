@@ -26,7 +26,7 @@ import com.dataselfcloud.dataselfcloud.codegen.service.GenTemplateGroupService;
 import com.dataselfcloud.dataselfcloud.common.core.util.R;
 import com.dataselfcloud.dataselfcloud.common.log.annotation.SysLog;
 import com.dataselfcloud.dataselfcloud.common.security.annotation.HasPermission;
-import com.dataselfcloud.plugin.excel.annotation.ResponseExcel;
+import com.pig4cloud.plugin.excel.annotation.ResponseExcel;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.tags.Tag;

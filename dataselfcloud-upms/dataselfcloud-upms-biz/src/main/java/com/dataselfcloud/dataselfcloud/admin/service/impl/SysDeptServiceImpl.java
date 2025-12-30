@@ -40,7 +40,7 @@ import com.dataselfcloud.dataselfcloud.admin.api.vo.DeptExcelVo;
 import com.dataselfcloud.dataselfcloud.admin.mapper.SysDeptMapper;
 import com.dataselfcloud.dataselfcloud.admin.service.SysDeptService;
 import com.dataselfcloud.dataselfcloud.common.core.util.R;
-import com.dataselfcloud.plugin.excel.vo.ErrorMessage;
+import com.pig4cloud.plugin.excel.vo.ErrorMessage;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.lang.tree.Tree;

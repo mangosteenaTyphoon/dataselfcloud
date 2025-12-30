@@ -34,7 +34,7 @@ import com.dataselfcloud.dataselfcloud.daemon.quartz.service.SysJobLogService;
 import com.dataselfcloud.dataselfcloud.daemon.quartz.service.SysJobService;
 import com.dataselfcloud.dataselfcloud.daemon.quartz.util.ClassNameValidator;
 import com.dataselfcloud.dataselfcloud.daemon.quartz.util.TaskUtil;
-import com.dataselfcloud.plugin.excel.annotation.ResponseExcel;
+import com.pig4cloud.plugin.excel.annotation.ResponseExcel;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.tags.Tag;

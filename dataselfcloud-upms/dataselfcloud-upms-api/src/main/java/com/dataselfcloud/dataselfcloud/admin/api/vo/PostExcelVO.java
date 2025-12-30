@@ -3,7 +3,7 @@ package com.dataselfcloud.dataselfcloud.admin.api.vo;
 import cn.idev.excel.annotation.ExcelIgnore;
 import cn.idev.excel.annotation.ExcelProperty;
 import cn.idev.excel.annotation.write.style.ColumnWidth;
-import com.dataselfcloud.plugin.excel.annotation.ExcelLine;
+import com.pig4cloud.plugin.excel.annotation.ExcelLine;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
