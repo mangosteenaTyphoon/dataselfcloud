@@ -5,7 +5,7 @@ import com.dataselfcloud.dataselfcloud.common.core.constant.ServiceNameConstants
 import com.dataselfcloud.dataselfcloud.common.core.util.SpringContextHolder;
 import com.dataselfcloud.dataselfcloud.common.excel.provider.RemoteDictApiService;
 import com.dataselfcloud.dataselfcloud.common.excel.provider.RemoteDictDataProvider;
-import com.dataselfcloud.plugin.excel.handler.DictDataProvider;
+import com.pig4cloud.plugin.excel.handler.DictDataProvider;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;

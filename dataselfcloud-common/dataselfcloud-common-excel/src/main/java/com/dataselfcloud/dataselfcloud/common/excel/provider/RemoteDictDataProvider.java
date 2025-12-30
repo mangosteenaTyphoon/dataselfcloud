@@ -3,8 +3,8 @@ package com.dataselfcloud.dataselfcloud.common.excel.provider;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.map.MapUtil;
 import com.dataselfcloud.dataselfcloud.common.core.util.R;
-import com.dataselfcloud.plugin.excel.handler.DictDataProvider;
-import com.dataselfcloud.plugin.excel.vo.DictEnum;
+import com.pig4cloud.plugin.excel.handler.DictDataProvider;
+import com.pig4cloud.plugin.excel.vo.DictEnum;
 import lombok.RequiredArgsConstructor;
 
 import java.util.List;
