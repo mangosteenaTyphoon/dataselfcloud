@@ -30,7 +30,7 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>pig-upms-api</module>
-		<module>pig-upms-biz</module>
+		<module>dataselfcloud-upms-api</module>
+		<module>dataselfcloud-upms-biz</module>
 	</modules>
 </project>
