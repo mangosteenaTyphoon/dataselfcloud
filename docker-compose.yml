@@ -1,125 +1,125 @@
 services:
-  pig-mysql:
+  dataselfcloud-mysql:
     build:
       context: ./db
     environment:
       MYSQL_ROOT_HOST: "%"
       MYSQL_ROOT_PASSWORD: root
     restart: always
-    container_name: pig-mysql
-    image: pig-mysql
+    container_name: dataselfcloud-mysql
+    image: dataselfcloud-mysql
     ports:
       - 33306:3306
     networks:
       - spring_cloud_default
 
-  pig-redis:
+  dataselfcloud-redis:
     image: registry.cn-hangzhou.aliyuncs.com/dockerhub_mirror/redis
     ports:
       - 36379:6379
     restart: always
-    container_name: pig-redis
-    hostname: pig-redis
+    container_name: dataselfcloud-redis
+    hostname: dataselfcloud-redis
     networks:
       - spring_cloud_default
 
-  pig-register:
+  dataselfcloud-register:
     build:
-      context: ./pig-register
+      context: ./dataselfcloud-register
     restart: always
     ports:
       - 8848:8848
       - 9848:9848
       - 8080:8080
     environment:
-      MYSQL_HOST: pig-mysql
-      REDIS_HOST: pig-redis
-    container_name: pig-register
-    hostname: pig-register
-    image: pig-register
+      MYSQL_HOST: dataselfcloud-mysql
+      REDIS_HOST: dataselfcloud-redis
+    container_name: dataselfcloud-register
+    hostname: dataselfcloud-register
+    image: dataselfcloud-register
     networks:
       - spring_cloud_default
 
-  pig-gateway:
+  dataselfcloud-gateway:
     build:
-      context: ./pig-gateway
+      context: ./dataselfcloud-gateway
     restart: always
     ports:
       - 9999:9999
-    container_name: pig-gateway
-    hostname: pig-gateway
-    image: pig-gateway
+    container_name: dataselfcloud-gateway
+    hostname: dataselfcloud-gateway
+    image: dataselfcloud-gateway
     environment:
-      REDIS_HOST: pig-redis
-      NACOS_HOST: pig-register
+      REDIS_HOST: dataselfcloud-redis
+      NACOS_HOST: dataselfcloud-register
     networks:
       - spring_cloud_default
 
-  pig-auth:
+  dataselfcloud-auth:
     build:
-      context: ./pig-auth
+      context: ./dataselfcloud-auth
     restart: always
-    container_name: pig-auth
-    hostname: pig-auth
-    image: pig-auth
+    container_name: dataselfcloud-auth
+    hostname: dataselfcloud-auth
+    image: dataselfcloud-auth
     environment:
-      REDIS_HOST: pig-redis
-      NACOS_HOST: pig-register
+      REDIS_HOST: dataselfcloud-redis
+      NACOS_HOST: dataselfcloud-register
     networks:
       - spring_cloud_default
 
-  pig-upms:
+  dataselfcloud-upms:
     build:
-      context: ./pig-upms/pig-upms-biz
+      context: ./dataselfcloud-upms/dataselfcloud-upms-biz
     restart: always
-    container_name: pig-upms
-    hostname: pig-upms
-    image: pig-upms
+    container_name: dataselfcloud-upms
+    hostname: dataselfcloud-upms
+    image: dataselfcloud-upms
     environment:
-      MYSQL_HOST: pig-mysql
-      REDIS_HOST: pig-redis
-      NACOS_HOST: pig-register
+      MYSQL_HOST: dataselfcloud-mysql
+      REDIS_HOST: dataselfcloud-redis
+      NACOS_HOST: dataselfcloud-register
     networks:
       - spring_cloud_default
 
-  pig-monitor:
+  dataselfcloud-monitor:
     build:
-      context: ./pig-visual/pig-monitor
+      context: ./dataselfcloud-visual/dataselfcloud-monitor
     restart: always
     ports:
       - 5001:5001
-    container_name: pig-monitor
-    hostname: pig-monitor
-    image: pig-monitor
+    container_name: dataselfcloud-monitor
+    hostname: dataselfcloud-monitor
+    image: dataselfcloud-monitor
     environment:
-      NACOS_HOST: pig-register
+      NACOS_HOST: dataselfcloud-register
     networks:
       - spring_cloud_default
 
-  pig-codegen:
+  dataselfcloud-codegen:
     build:
-      context: ./pig-visual/pig-codegen
+      context: ./dataselfcloud-visual/dataselfcloud-codegen
     restart: always
-    container_name: pig-codegen
-    hostname: pig-codegen
-    image: pig-codegen
+    container_name: dataselfcloud-codegen
+    hostname: dataselfcloud-codegen
+    image: dataselfcloud-codegen
     environment:
-      MYSQL_HOST: pig-mysql
-      REDIS_HOST: pig-redis
-      NACOS_HOST: pig-register
+      MYSQL_HOST: dataselfcloud-mysql
+      REDIS_HOST: dataselfcloud-redis
+      NACOS_HOST: dataselfcloud-register
     networks:
       - spring_cloud_default
 
-  pig-quartz:
+  dataselfcloud-quartz:
     build:
-      context: ./pig-visual/pig-quartz
+      context: ./dataselfcloud-visual/dataselfcloud-quartz
     restart: always
-    image: pig-quartz
-    container_name: pig-quartz
+    image: dataselfcloud-quartz
+    container_name: dataselfcloud-quartz
     environment:
-      MYSQL_HOST: pig-mysql
-      REDIS_HOST: pig-redis
-      NACOS_HOST: pig-register
+      MYSQL_HOST: dataselfcloud-mysql
+      REDIS_HOST: dataselfcloud-redis
+      NACOS_HOST: dataselfcloud-register
     networks:
       - spring_cloud_default
 

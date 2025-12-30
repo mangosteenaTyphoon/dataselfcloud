@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--
-  ~ Copyright (c) 2020 pig4cloud Authors. All Rights Reserved.
+  ~ Copyright (c) 2020 dataselfcloud Authors. All Rights Reserved.
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -18,12 +18,12 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.pig4cloud</groupId>
-	<artifactId>pig</artifactId>
+	<groupId>com.dataselfcloud</groupId>
+	<artifactId>dataselfcloud</artifactId>
 	<name>${project.artifactId}</name>
 	<version>${revision}</version>
 	<packaging>pom</packaging>
-	<url>https://www.pig4cloud.com</url>
+	<url>https://www.dataselfcloud.com</url>
 	<properties>
 		<!-- 项目版本号 -->
 		<revision>3.9.2</revision>
@@ -33,7 +33,7 @@
 		<spring-cloud-alibaba.version>2025.0.0.0</spring-cloud-alibaba.version>
 		<jasypt.version>3.0.5</jasypt.version>
 		<git.commit.plugin>9.0.1</git.commit.plugin>
-		<docker.namespace>pig4cloud</docker.namespace>
+		<docker.namespace>dataselfcloud</docker.namespace>
 		<maven.compiler.target>17</maven.compiler.target>
 		<docker.host>http://192.168.0.100:2375</docker.host>
 		<commons-lang3.version>3.19.0</commons-lang3.version>
@@ -105,8 +105,8 @@
 		<dependencies>
 			<!--pig 公共版本定义-->
 			<dependency>
-				<groupId>com.pig4cloud</groupId>
-				<artifactId>pig-common-bom</artifactId>
+				<groupId>com.dataselfcloud</groupId>
+				<artifactId>dataselfcloud-common-bom</artifactId>
 				<version>${project.version}</version>
 				<type>pom</type>
 				<scope>import</scope>

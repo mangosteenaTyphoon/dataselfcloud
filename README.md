@@ -1,10 +1,10 @@
 <p align="center">
- <img src="https://img.shields.io/badge/Pig-3.9-success.svg" alt="Build Status">
+ <img src="https://img.shields.io/badge/DataSelfCloud-3.9-success.svg" alt="Build Status">
  <img src="https://img.shields.io/badge/Spring%20Cloud-2025-blue.svg" alt="Coverage Status">
  <img src="https://img.shields.io/badge/Spring%20Boot-3.5-blue.svg" alt="Downloads">
  <img src="https://img.shields.io/badge/Vue-3.5-blue.svg" alt="Downloads">
- <img src="https://img.shields.io/github/license/pig-mesh/pig"/>
- <img src="https://gitcode.com/pig-mesh/pig/star/badge.svg"/>
+ <img src="https://img.shields.io/github/license/dataselfcloud/pig"/>
+ <img src="https://gitcode.com/dataselfcloud/pig/star/badge.svg"/>
 </p>
 
 ## 系统说明
@@ -15,21 +15,21 @@
 
 #### 使用文档
 
-PIG 提供了详尽的部署文档 👉 [wiki.pig4cloud.com](https://wiki.pig4cloud.com)，涵盖开发环境配置、服务端启动、前端运行等关键步骤。
+PIG 提供了详尽的部署文档 👉 [wiki.dataselfcloud.com](https://wiki.dataselfcloud.com)，涵盖开发环境配置、服务端启动、前端运行等关键步骤。
 
 重要的事情说三遍：
 
-- 🔥 [ 配套文档 wiki.pig4cloud.com](https://wiki.pig4cloud.com)
-- 🔥 [ 配套文档 wiki.pig4cloud.com](https://wiki.pig4cloud.com)
-- 🔥 [ 配套文档 wiki.pig4cloud.com](https://wiki.pig4cloud.com)
+- 🔥 [ 配套文档 wiki.dataselfcloud.com](https://wiki.dataselfcloud.com)
+- 🔥 [ 配套文档 wiki.dataselfcloud.com](https://wiki.dataselfcloud.com)
+- 🔥 [ 配套文档 wiki.dataselfcloud.com](https://wiki.dataselfcloud.com)
 
 #### 其他产品
 
-- 👉🏻 [PIGX 在线体验](http://home.pig4cloud.com:38081)
+- 👉🏻 [PIGX 在线体验](http://home.dataselfcloud.com:38081)
 
-- 👉🏻 [自研BPMN工作流引擎](http://home.pig4cloud.com:38082)
+- 👉🏻 [自研BPMN工作流引擎](http://home.dataselfcloud.com:38082)
 
-- 👉🏻 [大模型 RAG 知识库](http://home.pig4cloud.com:38083)
+- 👉🏻 [大模型 RAG 知识库](http://home.dataselfcloud.com:38083)
 
 ## 微信群 [禁广告]
 
@@ -41,7 +41,7 @@ PIG 提供了详尽的部署文档 👉 [wiki.pig4cloud.com](https://wiki.pig4cl
 
 ```shell
 # 可用内存大于4G
-curl -o docker-compose.yaml https://try.pig4cloud.com
+curl -o docker-compose.yaml https://try.dataselfcloud.com
 # 等待5分钟
 docker compose up
 ```
