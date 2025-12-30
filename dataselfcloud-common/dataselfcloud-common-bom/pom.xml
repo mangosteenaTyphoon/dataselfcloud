@@ -156,13 +156,13 @@
 			</dependency>
 			<!-- 调用验证码核心模块 -->
 			<dependency>
-				<groupId>com.dataselfcloud.plugin</groupId>
+				<groupId>com.pig4cloud.plugin</groupId>
 				<artifactId>captcha-core</artifactId>
 				<version>${captcha.version}</version>
 			</dependency>
 			<!-- excel 导入导出 -->
 			<dependency>
-				<groupId>com.dataselfcloud.excel</groupId>
+				<groupId>com.pig4cloud.excel</groupId>
 				<artifactId>excel-spring-boot-starter</artifactId>
 				<version>${excel.version}</version>
 			</dependency>

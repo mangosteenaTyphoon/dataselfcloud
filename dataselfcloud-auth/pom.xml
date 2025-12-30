@@ -75,7 +75,7 @@
         </dependency>
         <!-- 调用验证码核心模块 -->
         <dependency>
-            <groupId>com.dataselfcloud.plugin</groupId>
+            <groupId>com.pig4cloud.plugin</groupId>
             <artifactId>captcha-core</artifactId>
         </dependency>
         <!-- 加解密依赖 -->
