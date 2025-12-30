@@ -330,23 +330,9 @@ mvn spring-javaformat:apply
 mvn spring-javaformat:validate
 ```
 
-## 📞 联系方式
-
-- 📧 Email: your-email@example.com
-- 💬 Issues: [GitHub Issues](https://github.com/yourusername/dataselfcloud/issues)
-
 ## ⭐ Star History
 
 如果这个项目对你有帮助，请给个 Star ⭐️ 支持一下！
 
-## 📜 更新日志
-
-### v3.9.0 (2025-01-01)
-- 🎉 项目初始化
-- ✨ 完成基础架构搭建
-- 🔧 集成 Spring Cloud 2025
-- 📝 完善项目文档
-
----
 
 Copyright © 2025 DataSelfCloud. All rights reserved.
