@@ -51,7 +51,7 @@ public class SysLogAspect {
 	 */
 	@Around("@annotation(sysLog)")
 	@SneakyThrows
-	public Object around(ProceedingJoinPoint point, com.pig4cloud.pig.common.log.annotation.SysLog sysLog) {
+	public Object around(ProceedingJoinPoint point, com.dataselfcloud.dataselfcloud.common.log.annotation.SysLog sysLog) {
 		String strClassName = point.getTarget().getClass().getName();
 		String strMethodName = point.getSignature().getName();
 		log.debug("[类名]:{},[方法]:{}", strClassName, strMethodName);
