@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--
-  ~ Copyright (c) 2020 dataselfcloud Authors. All Rights Reserved.
+  ~ Copyright (c) 2025 dataselfcloud Authors. All Rights Reserved.
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -93,17 +93,17 @@
 	</dependencies>
 
 	<modules>
-		<module>pig-register</module>
-		<module>pig-gateway</module>
-		<module>pig-auth</module>
-		<module>pig-upms</module>
-		<module>pig-common</module>
-		<module>pig-visual</module>
+		<module>dataselfcloud-register</module>
+		<module>dataselfcloud-gateway</module>
+		<module>dataselfcloud-auth</module>
+		<module>dataselfcloud-upms</module>
+		<module>dataselfcloud-common</module>
+		<module>dataselfcloud-visual</module>
 	</modules>
 
 	<dependencyManagement>
 		<dependencies>
-			<!--pig 公共版本定义-->
+			<!--dataselfcloud 公共版本定义-->
 			<dependency>
 				<groupId>com.dataselfcloud</groupId>
 				<artifactId>dataselfcloud-common-bom</artifactId>
@@ -209,7 +209,7 @@
 						</authConfig>
 						<images>
 							<image>
-								<!-- 镜像名称： 172.17.0.111/library/pig-gateway:2.6.3-->
+								<!-- 镜像名称： registry.cn-shanghai.aliyuncs.com/dataselfcloud/dataselfcloud-gateway:3.9.2-->
 								<name>${docker.registry}/${docker.namespace}/${project.name}:${project.version}</name>
 								<build>
 									<dockerFile>${project.basedir}/Dockerfile</dockerFile>
@@ -314,7 +314,7 @@
 		<profile>
 			<id>boot</id>
 			<modules>
-				<module>pig-boot</module>
+				<module>dataselfcloud-boot</module>
 			</modules>
 		</profile>
 		<!-- 自动激活，针对 lombok 注解增强-->
